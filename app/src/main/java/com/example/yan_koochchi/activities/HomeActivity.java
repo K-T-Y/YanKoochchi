@@ -27,5 +27,19 @@ LinearLayout pnl_profile,pnl_booking,pnl_mybookings,pnl_contactus;
                 startActivity(intent);
             }
         });
+        pnl_mybookings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getApplicationContext(), MyBookingActivity.class);
+                startActivity(intent);
+            }
+        });
+        pnl_booking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),BookingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -4,11 +4,13 @@ package com.example.yan_koochchi.apiutil;
 
 import com.example.yan_koochchi.models.bookingModel;
 import com.example.yan_koochchi.models.responseModel;
+import com.example.yan_koochchi.models.userModel;
 
 
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -132,5 +134,7 @@ public interface ApiInterface {
 
     @GET("api/User/LoginUser")
     Call<responseModel> Login(@Query("email") String email,@Query("password") String password);
+    @POST("api/User/SaveUser")
+    Call<responseModel> Register(@Body userModel user);
 
 }

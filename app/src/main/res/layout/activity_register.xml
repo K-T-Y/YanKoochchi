@@ -135,7 +135,7 @@
             android:layout_marginLeft="15dp"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:layout_marginTop="5dp"
             android:background="@drawable/round_corner" />
         <TextView
