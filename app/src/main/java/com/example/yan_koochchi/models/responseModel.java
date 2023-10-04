@@ -4,6 +4,16 @@ public class responseModel {
    String message ;
    int code;
 
+   userModel data;
+
+    public userModel getData() {
+        return data;
+    }
+
+    public void setData(userModel data) {
+        this.data = data;
+    }
+
     public String getMessage() {
         return message;
     }

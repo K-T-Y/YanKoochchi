@@ -27,7 +27,7 @@ Button btn_register;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        txt_fname=findViewById(R.id.txt_password);
+        txt_fname=findViewById(R.id.txt_fname);
         txt_lname=findViewById(R.id.txt_lname);
         txt_address=findViewById(R.id.txt_address);
         txt_mobile=findViewById(R.id.txt_mobile);
