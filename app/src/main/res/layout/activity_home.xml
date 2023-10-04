@@ -26,6 +26,7 @@
             android:layout_marginLeft="130dp"
             android:layout_marginTop="40dp"
             android:text="Welcome"
+            android:textColor="@color/black"
             android:textSize="35dp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -40,37 +41,104 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
+            android:id="@+id/pnl_profile"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="100dp"
+            android:orientation="vertical"
             android:background="@drawable/roundedbutton" >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/baseline_person_pin_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pnl_booking"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:background="@drawable/roundedbutton"
             android:layout_marginTop="100dp"
+            android:orientation="vertical"
             android:layout_marginLeft="220dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/baseline_train_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pnl_mybookings"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="270dp"
+            android:orientation="vertical"
             android:background="@drawable/roundedbutton" >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Bookings"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp"
+                android:textSize="23dp"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pnl_contactus"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="220dp"
             android:layout_marginTop="270dp"
+            android:orientation="vertical"
             android:background="@drawable/roundedbutton" >
 
-
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/baseline_call_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:textSize="25dp"/>
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
