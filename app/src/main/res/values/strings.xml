@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Yan-Koochchi</string>
+    <string-array name="locations">
+        <item>Polgahawela</item>
+        <item>Meerigama</item>
+        <item>Veyangoda</item>
+        <item>Gamapaha</item>
+        <item>Ragama</item>
+        <item>Dematagoda</item>
+    </string-array>
 </resources>

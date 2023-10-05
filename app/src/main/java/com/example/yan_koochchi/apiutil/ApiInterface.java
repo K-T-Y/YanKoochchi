@@ -3,6 +3,7 @@ package com.example.yan_koochchi.apiutil;
 
 
 import com.example.yan_koochchi.models.bookingModel;
+import com.example.yan_koochchi.models.dataResponseModel;
 import com.example.yan_koochchi.models.responseModel;
 import com.example.yan_koochchi.models.userModel;
 
@@ -136,5 +137,8 @@ public interface ApiInterface {
     Call<responseModel> Login(@Query("email") String email,@Query("password") String password);
     @POST("api/User/SaveUser")
     Call<responseModel> Register(@Body userModel user);
+
+    @GET("GetAlShedule")
+    Call<dataResponseModel> GetAllSchedules();
 
 }

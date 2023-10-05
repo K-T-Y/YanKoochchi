@@ -61,6 +61,8 @@
             android:layout_marginTop="5dp"
             android:textSize="25dp"
             android:textStyle="bold"
+            android:entries="@array/locations"
+            android:inputType="textPersonName"
             android:textAlignment="center"
             android:background="@drawable/round_corner" />
         <TextView
@@ -81,6 +83,7 @@
             android:layout_marginLeft="15dp"
             android:textSize="25dp"
             android:textStyle="bold"
+            android:entries="@array/locations"
             android:inputType="text"
             android:layout_marginTop="5dp"
             android:background="@drawable/round_corner" />
@@ -95,7 +98,7 @@
             android:layout_marginTop="5dp"/>
 
         <CalendarView
-            android:id="@+id/txt_address"
+            android:id="@+id/cln_date"
             android:layout_width="379dp"
             android:layout_height="303dp"
             android:layout_marginLeft="15dp"
