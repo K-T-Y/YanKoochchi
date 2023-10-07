@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                             myEdit.putString("email", response.body().getData().getEmail().toString());
                             myEdit.putString("mobile", response.body().getData().getMobile().toString());
                             myEdit.putString("nic", response.body().getData().getNic().toString());
-                            myEdit.putString("id", response.body().getData().getNic().toString());
+                            myEdit.putString("id", response.body().getData().getId().toString());
                             myEdit.commit();
                             Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(getApplicationContext(), HomeActivity.class);

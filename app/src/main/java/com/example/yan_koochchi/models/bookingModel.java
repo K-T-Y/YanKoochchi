@@ -3,7 +3,7 @@ package com.example.yan_koochchi.models;
 public class bookingModel {
            String id;
            String from;
-           boolean status;
+           int status;
            String to;
           String  date;
           int  count;
@@ -26,11 +26,11 @@ public class bookingModel {
         this.from = from;
     }
 
-    public boolean isStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 

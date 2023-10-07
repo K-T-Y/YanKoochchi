@@ -158,7 +158,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/roundedbutton"
             android:backgroundTint="@color/theme"
-            android:text="Regster"
+            android:text="Book Now"
             android:textSize="15dp"
             android:textColor="@color/black" />
     </LinearLayout>

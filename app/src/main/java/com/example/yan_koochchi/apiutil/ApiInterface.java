@@ -1,19 +1,15 @@
 package com.example.yan_koochchi.apiutil;
 
 
-
 import com.example.yan_koochchi.models.bookingModel;
 import com.example.yan_koochchi.models.dataResponseModel;
 import com.example.yan_koochchi.models.responseModel;
 import com.example.yan_koochchi.models.userModel;
 
-
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
@@ -21,7 +17,7 @@ import retrofit2.http.Query;
 public interface ApiInterface {
 
 
-//    @FormUrlEncoded
+    //    @FormUrlEncoded
 //    @POST("login.php")
 //    Call<APIResponseLogin> performUserLogin(@Field("email") String username, @Field("password") String password);
 //
@@ -129,12 +125,15 @@ public interface ApiInterface {
 //    @FormUrlEncoded
 //    @POST("get_friend_requests.php")
 //    Call<List<APIFriendReq>> get_friend_req(@Field("user_id") int user_id);
+    @GET("UserGetBooking")
+    Call<List<bookingModel>> GetUserBookings(@Query("id") String id);
 
     @GET("GetAlBookings")
-    Call<List<bookingModel>>getallbooking();
+    Call<List<bookingModel>> GetAllBookings();
 
     @GET("api/User/LoginUser")
-    Call<responseModel> Login(@Query("email") String email,@Query("password") String password);
+    Call<responseModel> Login(@Query("email") String email, @Query("password") String password);
+
     @POST("api/User/SaveUser")
     Call<responseModel> Register(@Body userModel user);
 
