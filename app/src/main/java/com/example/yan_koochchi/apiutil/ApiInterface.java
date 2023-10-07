@@ -140,4 +140,7 @@ public interface ApiInterface {
     @GET("GetAlShedule")
     Call<dataResponseModel> GetAllSchedules();
 
+    @POST("SaveBooking")
+    Call<responseModel>SaveBooking(@Body bookingModel booking);
+
 }
